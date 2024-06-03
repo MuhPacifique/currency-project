@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+    <div class="XY">
+        <h1>XYZ-COMPANY</h1>
+        <h3>CURRANCY EXCHANGE PLATFORM</h3>
+    </div>
+    <div class="three"></div>
+    <div class="currancy">
+        <form id="myForm" onsubmit="return validateForm()">
+        <div class="amount">
+            <label><b>Amount</b></label><br>
+            <input type="number" placeholder="100" id="amount" name="name" required>
+        </div>
+        <div class="from">
+            <label><b>From</b></label><br>
+            <select id="fromCurrency">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="RWF">RWF</option>
+                <option value="GBP">GBP</option>
+            </select>
+        </div>
+        <div class="to">
+            <label><b>To</b></label><br>
+            <select id="toCurrency">
+          <option value="EUR">EUR</option>
+          <option value="RWF">RWF</option>
+          <option value="GBP">GBP</option>
+            </select>
+            <div id="div4">
+                <p>Result: <span id="result"></span></p>
+              </div>
+        </div>
+        <button onclick="showAlert()" type="submit">convert</button>
+        <div class="Result"></div>
+        
+        </form>
+    </div>
+    <script src="../js/index.js"></script>
+</body>
+</html>
